@@ -1,0 +1,14 @@
+total 116
+drwxr-xr-x. 1 elmehdi elmehdi   238 Apr  1 15:07 .
+drwxr-xr-x. 1 elmehdi elmehdi    24 Apr  1 14:46 ..
+-rw-r--r--. 1 elmehdi elmehdi   758 Apr  1 15:05 eslint.config.js
+-rw-r--r--. 1 elmehdi elmehdi   253 Apr  1 15:05 .gitignore
+-rw-r--r--. 1 elmehdi elmehdi   357 Apr  1 15:05 index.html
+drwxr-xr-x. 1 elmehdi elmehdi  2576 Apr  1 15:06 node_modules
+-rw-r--r--. 1 elmehdi elmehdi     0 Apr  1 15:07 output.txt
+-rw-r--r--. 1 elmehdi elmehdi   601 Apr  1 15:05 package.json
+-rw-r--r--. 1 elmehdi elmehdi 90633 Apr  1 15:06 package-lock.json
+drwxr-xr-x. 1 elmehdi elmehdi    40 Apr  1 15:05 public
+-rw-r--r--. 1 elmehdi elmehdi  1027 Apr  1 15:05 README.md
+drwxr-xr-x. 1 elmehdi elmehdi    74 Apr  1 15:05 src
+-rw-r--r--. 1 elmehdi elmehdi   161 Apr  1 15:05 vite.config.js

@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-matrix-green: #00FF41;
+  --color-matrix-dark: #050505;
+  --color-matrix-gray: #0D0208;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-matrix-dark text-matrix-green font-mono selection:bg-matrix-green selection:text-matrix-dark;
+    background-image: radial-gradient(circle at center, #0a0a0a 0%, #050505 100%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-matrix-green tracking-wider;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-matrix-dark/80 backdrop-blur-md border border-matrix-green/30 rounded-lg p-6 shadow-[0_0_20px_rgba(0,255,65,0.15)];
+    transition: all 0.3s ease;
+  }
+
+  .glass-card:hover {
+    @apply border-matrix-green/60 shadow-[0_0_30px_rgba(0,255,65,0.25)];
+  }
+
+  .terminal-input {
+    @apply bg-transparent border-0 border-b-2 border-matrix-green/30 text-matrix-green focus:border-matrix-green focus:ring-0 outline-none text-center text-xl transition-all duration-300;
+  }
+
+  .terminal-label {
+    @apply text-xs uppercase tracking-widest text-matrix-green/50 mb-1 block;
+  }
+
+  .btn-cyber {
+    @apply relative px-6 py-2 border border-matrix-green text-matrix-green overflow-hidden transition-all duration-300 hover:bg-matrix-green hover:text-matrix-dark active:scale-95;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+  }
+
+  .neon-glow {
+    box-shadow: 0 0 10px #00FF41, 0 0 20px #00FF41;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-matrix-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-matrix-green/20 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-matrix-green/40;
+}
